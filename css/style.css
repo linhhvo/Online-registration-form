@@ -53,7 +53,7 @@ legend {
 input,
 textarea,
 select {
-  background-color: rgba(255, 236, 202, 0.829);
+  background-color: rgba(231, 231, 231, 0.829);
   border: none;
   border-radius: 5px;
   padding: 1.5em;
@@ -89,7 +89,10 @@ input[type="radio"] {
   margin: 0.75em 0 1em;
 }
 :focus {
-  border: solid 1px orange;
+  border: solid 2px orange;
+  outline: none;
+  background: rgba(252, 226, 178, 0.897);
+  transition: background 1s;
 }
 
 button {
@@ -100,8 +103,12 @@ button {
   border: none;
   background-color: rgb(255, 196, 86);
   border-radius: 10px;
+  cursor: pointer;
 }
 
+button:active {
+  background: orange;
+}
 footer {
   font-style: italic;
   margin: 3em auto 10em;
