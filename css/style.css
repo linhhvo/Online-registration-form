@@ -59,6 +59,7 @@ select {
   padding: 1.5em;
   margin: 1.5em 0;
   flex-grow: 1;
+  transition: background 1s;
 }
 
 label,
@@ -66,10 +67,13 @@ label,
   flex-basis: 100%;
 }
 
-input[placeholder*="Required"] {
+input[placeholder="Required"] {
   text-align: right;
   font-style: italic;
-  letter-spacing: 1.5px;
+}
+
+::placeholder {
+  padding-right: 0.1em;
 }
 
 input[name="zip"] {
@@ -89,11 +93,11 @@ input[type="radio"] {
 .question {
   margin: 0.75em 0 1em;
 }
+
 :focus {
   border: solid 2px orange;
   outline: none;
   background: rgba(252, 226, 178, 0.897);
-  transition: background 1s;
 }
 
 button {
@@ -116,6 +120,8 @@ footer {
   text-align: center;
   color: grey;
 }
+
+/* Large screen layout */
 
 @media (min-width: 768px) {
   .intro,
