@@ -67,13 +67,15 @@ label,
   flex-basis: 100%;
 }
 
-input[placeholder="Required"] {
-  text-align: right;
+::placeholder {
   font-style: italic;
+  font-size: 1rem;
 }
 
-::placeholder {
+#name::placeholder,
+#email::placeholder {
   padding-right: 0.1em;
+  text-align: right;
 }
 
 input[name="zip"] {
